@@ -1,0 +1,114 @@
+html, body {
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+form#formulario {
+    align-items: center;
+    background-color: #0F0E0D;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw; 
+}
+
+div.container {
+    align-content: center;
+    align-items: center;
+    border: solid 1px #FFF44F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px; 
+    width: 400px;
+}
+
+div.div-titulo {
+    align-items: center;
+    color: #98BF2C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 42px;
+    margin: 0px;
+    margin-bottom: 25px;
+    padding-top: 0px;
+    text-shadow: -1px 1px 0 #FFFF,
+                          1px 1px 0 #FFFF,
+                         1px -1px 0 #FFFF,
+                        -1px -1px 0 #FFFF;
+}
+
+.div-input {
+    display: flex;
+    flex-direction: column;
+    width:250px;
+}
+
+label {
+    color: #feffffe0;
+    margin-bottom: 5px;
+}
+
+.input1 {
+    appearance: none;
+    background-color: transparent;
+    border: solid 1px #fff34f5d;
+    color: #FFFFFD;
+    margin-bottom: 15px;
+    padding: 0.10rem;
+    width: 100%;
+}
+
+.input1:focus {
+    outline: 0;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.848);
+}
+
+.div-botao {
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: #98BF2C;
+    margin: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #98bf2c52;
+    color: white;
+    padding: 2px;
+    transition: ease-out 0.3s;
+}
+
+button {
+    background-color: transparent;
+    border: solid 2px #98BF2C;
+    color: #98BF2C;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #98BF2C;
+    color: white;
+    transition: ease-out 0.3s;
+}
+
+
+
+
+
+
+
+
+

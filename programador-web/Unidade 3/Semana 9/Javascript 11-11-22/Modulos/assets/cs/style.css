@@ -1,0 +1,173 @@
+@keyframes animationtop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+
+#body {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    max-height: 100px;
+    max-width: 180px;
+}
+
+ul {
+    display: flex;
+}
+
+.link, .link button {
+    background-color: transparent;
+    border: none;
+    color: orange;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    list-style: none;
+    padding: 12px 12px 0px 12px;
+    text-decoration: none;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.link:hover {
+    color: orange;
+    border-bottom: solid 2px black;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    list-style: none;
+    padding: 12px 12px 0px 12px;
+    text-decoration: none;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.link.home:hover{
+    color: black;
+    background-color: orange;
+    border-radius: 3px;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    list-style: none;
+    padding: 12px 12px 0px 12px;
+    text-decoration: none;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.link.sign_in {
+    cursor: pointer;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    color: orange;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;  
+}
+
+.modal, .modal2 {
+    background-color: transparent;
+    border: solid 1px orange;
+    display: none;
+    height: 50%;
+    margin-top: 25px;
+    overflow: hidden;
+    width: 50%;
+}
+
+.content, .content2 {
+    position: relative;
+    animation-duration: 0.2s;
+    animation-name: animationtop;
+}
+
+.content, .content2, .login2-div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle {
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+
+.subtitle-div, .login2-div {
+    background-color: transparent;
+}
+
+.login-div {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:10px 0px;
+}
+
+.lbl-login {
+    font-size: 16px;
+    color: orange;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+}
+
+input {
+    background-color: transparent;
+    border: solid 2px black;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+}
+
+a { 
+    margin: 8px 0px 15px 0px;
+    color: #1f1fe9;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+:link { color: #1f1fe9; }
+:visited { color: #1f1fe9;}
+
+.submitBtn, .submitBtn2 {
+    background-color: transparent;
+    border: solid 1px orange;
+    color: orange;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.submitBtn:hover, .submitBtn2:hover {
+    transition: 1s;
+    background-color: orange;
+    border: solid 1px orange;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: rgba(255, 166, 0, 0.493);
+    text-align: center;
+}

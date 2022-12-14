@@ -1,0 +1,43 @@
+.navbar-brand {
+    font-family: Helvetica, sans-serif;
+}
+
+div#carouselExampleIndicators {
+    width:30%;
+    margin: auto;
+}
+
+.pesquisar-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 30px 80px 80px 80px;
+    justify-items: center;
+    align-items: center;
+}
+
+nav.navbar.navbar-expand-lg.bg-light {
+    margin-bottom: 32px;
+}
+
+h3 {
+    margin: 32px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: .875em;
+    /* color: #6c757d; */
+}

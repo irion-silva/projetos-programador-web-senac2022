@@ -1,0 +1,5 @@
+npm install --save-dev webpack webpack-cli
+
+npm install dayjs
+
+npx webpack

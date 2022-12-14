@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #DEE4E7;
+    --bg-color-default: transparent;
+    --bg-color-success: #4BB543;
+    --border-color: #1565C0; 
+    --button-border-color: #F7AD2F;
+    --button-color-dark-hover: #FFFFFF:
+    --color-success: #1565C0;
+    --color-success-dark: #747980;
+    --error-color: #ff0043;
+    --font-button-dark: #FFFFFF;
+    --font-color: #1E3F66;
+    --input-border-color: #F7AD2F;
+    --button-border-color-dark: #747980;
+    --button-border-hover-dark: #212529;
+    --button-background-color-dark: #F7AD2F;
+    --primary-color: #F1F3F6;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: "Ubuntu", sans-serif;
+    overflow-y: hidden; 
+    padding: 10px;
+}
+
+main {
+    border: 2px dashed var(--border-color);
+    display: block;
+    margin: 0 auto;
+    max-width: 40rem;
+    max-height: 95vh;
+    padding: 0 1.5rem 2.5rem;
+    position: relative;
+}
+
+#themeSwitcher {
+    background-color: var(--bg-color);
+    border: .125rem solid var(--font-color);
+    color: var(--font-color);
+}
+
+#themeSwitcher:hover {
+    background-color: var(--font-color);
+    color: var(--bg-color);
+}
+
+[data-theme='dark'] #themeSwitcher:hover {
+    background-color: var(--button-background-color-dark);
+    border-color: var(--button-border-hover-dark);
+    color: var(--button-color-dark-hover);
+}
+
+header {
+    padding: 2rem 0;
+}
+
+button {
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: .25rem;
+    font-weight: 700;
+    padding: .5rem 1rem;
+    transition: .15s;
+}
+
+[data-theme='dark'] button {
+    background-color: var(--primary-color);
+    border: 1px solid var(--button-border-color);
+    border-radius: .25rem;
+    font-weight: 700;
+    padding: .5rem 1rem;
+    transition: .15s;
+}
+
+input {
+    background-color: var(--bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: .5rem;
+    color: var(--font-color);
+    display: block;
+    font-size: 1.75rem;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: end;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+[data-theme='dark'] input, [data-theme='dark'] #themeSwitcher {
+    border-color: var(--input-border-color);
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+#keys button {
+    color: var(--font-color);
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+[data-theme='dark'] #keys button {
+    color: var(--font-button-dark)
+}
+
+
+#keys button:hover {
+    filter: brightness(0.8);
+}
+
+#result {
+    border-radius: 0 .5rem .5rem 0;
+    border-width: 2px 2px 2px 0;
+}
+
+#copyToClipboard {
+    background-color: var(--bg-color-default);
+    border: solid var(--border-color);
+    border-radius: .5rem 0 0 .5rem;
+    border-width: 2px;
+    color: var(--font-color);
+    cursor: pointer;
+    display: block;
+    height: 4.25rem;
+    width: 6rem;
+}
+
+[data-theme='dark'] #copyToClipboard {
+    border-color: var(--button-border-color);
+    color: var(--color-success-dark)!important;
+}
+
+.success {
+    background-color: var(--bg-color-success) !important ;
+    border-color: var(--border-color) !important;
+    color:  var(--color-success)!important;
+}
+
+[data-theme='dark'] .success {
+    border-color: var(--button-border-color);
+    color: var(--color-success-dark) !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.error {
+    background-color: var(--error-color);
+}
+
+footer {
+    margin-top: 10px;
+}

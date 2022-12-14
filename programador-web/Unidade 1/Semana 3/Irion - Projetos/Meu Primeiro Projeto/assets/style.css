@@ -1,0 +1,85 @@
+/* (* Seleciona todos os seletores */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color:black;
+}
+
+body {
+    background: radial-gradient(ellipse at right bottom, white 5%, #80FFDB 25%, #5390D9  50%, #a3a5f0 100%);
+}
+
+body, html {
+    margin: 0px;
+    padding: 5px;
+}
+
+header, main {
+    text-align: center;
+}
+
+.irion-img {
+    margin-bottom: 13px;
+    margin-top: 5px;
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.788);
+}
+
+.irion-img:hover {
+    transform: scale(1.1);
+}
+
+.conteudo {
+    padding: 0px 15px 0px 15px;
+    border-radius: 2%;
+    margin: 5px;
+}
+
+section div {
+    max-width: 580px;
+    background: rgba(246, 246, 247, 0.4);
+    border: 2px solid rgba(236, 235, 233, 0.568);
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+p {
+    margin: 8px;
+}
+
+ul {
+    margin: 8px;
+}
+
+.texto {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.github:hover, .linkedin:hover {
+    transform: scale(1.1);
+}
+
+.redes-sociais-img, .meus-conhecimentos {
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+li {
+    list-style: none;
+}
